@@ -1,7 +1,7 @@
 <?php
 include'connection.php';
 
-function collectpost($value)
+function collectpost($value=null)
 {
         $value=$_POST['post-action'];
 if ($value == 'register-property') {
@@ -17,9 +17,9 @@ if ($value == 'register-property') {
             $query = $connection->prepare("INSERT INTO account(id,email, password) VALUES (?,?,?)");
 
             // Bind the values to the prepare statement
-            $query->bindParam(1, $email);
-            $query->bindParam(2, $password);
-            $query->bindParam(3,$id);
+            $query->bindParam(1,$id);
+            $query->bindParam(2, $email);
+            $query->bindParam(3, $password);
 
             // Execute the query
             $query->execute();
