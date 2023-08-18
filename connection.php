@@ -21,7 +21,7 @@ $db_inited=true;
 $hostname="localhost";
 $username="root";
 $password="";
-$database="bugtrack";
+$database="login";
 //create new PDO instance
 DB::$connection=new PDO(
     "mysql:host=$hostname;dbname=$database",

@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="controller.php" method="POST">
 
+<form action="controller.php" method="POST">
 <input type="hidden" name="post-action" value="register-property">
 <label for="email">Email:</label><br>
 <input type="text" id="email" name="email"><br>
