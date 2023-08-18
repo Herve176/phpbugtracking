@@ -8,7 +8,7 @@
 <body>
     <form action="controller.php" method="POST">
 
-<input type="hidden" name="register" value="register-property">
+<input type="hidden" name="post-action" value="register-property">
 <label for="email">Email:</label><br>
 <input type="text" id="email" name="email"><br>
 <label for="password">Password:</label><br>
