@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<div>
 <form action="controller.php" method="POST">
 <input type="hidden" name="post-action" value="register-property">
 <label for="name">Name:</label><br>
@@ -21,5 +21,6 @@
 <input type="submit" value="Register">
 
     </form>
+    </div>
 </body>
 </html>
